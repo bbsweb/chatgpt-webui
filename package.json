@@ -1,0 +1,36 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "i18next": "latest",
+    "mongodb": "latest",
+    "next": "latest",
+    "react-markdown": "latest",
+    "swr": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals"
+    ],
+    "rules": {
+      "import/no-anonymous-default-export": [
+        2,
+        {
+          "allowArrowFunction": true,
+          "allowObject": true
+        }
+      ],
+      "react/display-name": 0
+    }
+  }
+}

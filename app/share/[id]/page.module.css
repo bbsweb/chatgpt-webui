@@ -1,0 +1,51 @@
+.main {
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem;
+
+  --chatgpt-bg: #e7f8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] .main {--chatgpt-bg: #1b262a;}
+}
+
+[data-theme="dark"] .main {--chatgpt-bg: #1b262a;}
+
+.title {
+  text-align: center;
+}
+
+.chat {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.chat > .content {
+  background: var(--chatgpt-bg);
+}
+
+.chatUser {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+}
+
+.chatUser > .content {
+  background: var(--accent2);
+}
+
+.content {
+  padding: .5rem;
+  border-radius: 10px;
+  max-width: 90%;
+  overflow: auto;
+}
+
+.content > :first-child {
+  margin-top: 0;
+}
+
+.content > :last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'i';
+  src:
+    url('i.ttf') format('truetype'),
+    url('i.woff') format('woff'),
+    url('i.svg#i') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  font-family: 'i';
+  font-size: 125%;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-edit:before {
+  content: "\e927";
+}
+.i-plus:before {
+  content: "\e928";
+}
+.i-microphone:before {
+  content: "\e926";
+}
+.i-down-arrow-alt:before {
+  content: "\e925";
+}
+.i-pause:before {
+  content: "\e923";
+}
+.i-share-alt:before {
+  content: "\e924";
+}
+.i-send:before {
+  content: "\e921";
+}
+.i-plus-circle:before {
+  content: "\e922";
+}
+.i-link-external:before {
+  content: "\e920";
+}
+.i-area:before {
+  content: "\e900";
+}
+.i-bulb:before {
+  content: "\e901";
+}
+.i-camera:before {
+  content: "\e902";
+}
+.i-chatgpt:before {
+  content: "\e903";
+}
+.i-check:before {
+  content: "\e904";
+}
+.i-chevron-down:before {
+  content: "\e905";
+}
+.i-chevron-right:before {
+  content: "\e906";
+}
+.i-chevrons-left:before {
+  content: "\e907";
+}
+.i-chevrons-right:before {
+  content: "\e908";
+}
+.i-cog:before {
+  content: "\e909";
+}
+.i-copy:before {
+  content: "\e90a";
+}
+.i-done:before {
+  content: "\e90b";
+}
+.i-folder:before {
+  content: "\e90c";
+}
+.i-github:before {
+  content: "\e90d";
+}
+.i-grid:before {
+  content: "\e90e";
+}
+.i-group:before {
+  content: "\e90f";
+}
+.i-help-circle:before {
+  content: "\e910";
+}
+.i-image:before {
+  content: "\e911";
+}
+.i-info-circle:before {
+  content: "\e912";
+}
+.i-loader-alt:before {
+  content: "\e913";
+}
+.i-loading:before {content: "\e913";}
+.i-loading {animation: loading 1.5s infinite linear;}
+@keyframes loading {100%{transform: rotate(-360deg);}}
+.i-logout:before {
+  content: "\e914";
+}
+.i-message-rounded-add:before {
+  content: "\e915";
+}
+.i-no-entry:before {
+  content: "\e916";
+}
+.i-note:before {
+  content: "\e917";
+}
+.i-palette:before {
+  content: "\e918";
+}
+.i-repeat:before {
+  content: "\e919";
+}
+.i-slider:before {
+  content: "\e91a";
+}
+.i-star:before {
+  content: "\e91b";
+}
+.i-trash:before {
+  content: "\e91c";
+}
+.i-undefined:before {
+  content: "\e91d";
+}
+.i-video:before {
+  content: "\e91e";
+}
+.i-x:before {
+  content: "\e91f";
+}

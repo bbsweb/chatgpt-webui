@@ -1,0 +1,32 @@
+.chatgpt {
+  display: flex;
+  height: 100%;
+
+  --chatgpt-bg: #e7f8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] .chatgpt {--chatgpt-bg: #1b262a;}
+}
+
+[data-theme="dark"] .chatgpt {--chatgpt-bg: #1b262a;}
+
+.loading {
+  margin: auto;
+  font-size: 3rem;
+  animation: spin 1.5s infinite;
+  color: #408f72;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

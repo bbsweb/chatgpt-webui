@@ -1,0 +1,105 @@
+/* 主题变量 */
+:root {
+  color-scheme: light;
+  --bg: #fff; /* 背景色 */
+  --accent1: #eee;
+  --accent2: #ddd;
+  --accent3: #bbb;
+  --accent4: #999;
+  --accent5: #777;
+  --accent6: #555;
+  --fg: #333; /* 前景色 */
+
+  --info: #0761d1;
+  --info-bg: #d3e5ff;
+
+  --success: #1e4620;
+  --success-bg: #edf7ed;
+
+  --warn: #db8300;
+  --warn-bg: #fff4e5;
+
+  --error: #c50000;
+  --error-bg: #f7d4d6;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] {
+    color-scheme: dark;
+    --bg: #333;
+    --accent1: #444;
+    --accent2: #666;
+    --accent3: #888;
+    --accent4: #aaa;
+    --accent5: #ccc;
+    --accent6: #eee;
+    --fg: #fff;
+
+    --info: #d3e5ff;
+    --info-bg: #004499;
+
+    --success: #edf7ed;
+    --success-bg: #1e4620;
+
+    --warn: #ffbf69;
+    --warn-bg: #643c02;
+
+    --error: #f7d4d6;
+    --error-bg: #c50000;
+  }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+    --bg: #333;
+    --accent1: #444;
+    --accent2: #666;
+    --accent3: #888;
+    --accent4: #aaa;
+    --accent5: #ccc;
+    --accent6: #eee;
+    --fg: #fff;
+
+    --info: #d3e5ff;
+    --info-bg: #004499;
+
+    --success: #edf7ed;
+    --success-bg: #1e4620;
+
+    --warn: #ffbf69;
+    --warn-bg: #643c02;
+
+    --error: #f7d4d6;
+    --error-bg: #c50000;
+}
+
+/* 消除浏览器差异 */
+* {box-sizing: border-box;}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {transition: color .5s, background-color .5s;}
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  color: inherit;
+  background: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

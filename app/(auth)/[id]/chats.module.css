@@ -1,0 +1,52 @@
+.main {
+  position: absolute; /* 防止向下按钮被遮挡 */
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.chat {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.chat > .content {
+  background: var(--chatgpt-bg);
+}
+
+.chatUser {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 0.5rem;
+}
+
+.chatUser > .content {
+  background: var(--accent2);
+}
+
+.content {
+  padding: .5rem;
+  border-radius: 10px;
+  max-width: 90%;
+  overflow: auto;
+}
+
+.content > :first-child {
+  margin-top: 0;
+}
+
+.content > :last-child {
+  margin-bottom: 0;
+}
+
+.toBottom {
+  position: absolute;
+  bottom: .5rem;
+  left: 50%;
+  margin-left: -18px; /* 水平居中 */
+  background: var(--accent1);
+  padding: .5rem;
+  outline: 1px solid var(--accent2);
+  border-radius: 50%;
+}

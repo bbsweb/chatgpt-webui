@@ -1,0 +1,10 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20-buster",
+  "postCreateCommand": "cp .env.example .env && npm ci --quiet && docker compose up -d",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "remoteEnv": {
+    "NEXT_TELEMETRY_DISABLED": "1"
+  }
+}

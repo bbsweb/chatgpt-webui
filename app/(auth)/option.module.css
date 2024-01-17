@@ -1,0 +1,40 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+.label:hover {
+  background: var(--accent1);
+}
+
+.input {
+  width: 100%;
+  max-width: 320px;
+  padding: .4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: 1px solid var(--accent2);
+}
+
+.slider {
+  display: flex;
+  max-width: 320px;
+  border-radius: 10px;
+  outline: 1px solid var(--accent2);
+}
+.sliderInput {
+  max-width: 60px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: .3rem;
+  background: inherit;
+  text-align: center;
+}
+.sliderRange {
+  width: 100%;
+}

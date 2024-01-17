@@ -1,0 +1,95 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 .5rem;
+}
+
+.card {
+  width: 33.333%;
+  padding: 0 .5rem 1rem;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--chatgpt-bg);
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 0 1rem 1rem;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 10px 14px;
+  background: var(--accent2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px dashed var(--accent2);
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 768px;
+  max-height: 90%;
+  border: 1px solid var(--accent2);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.dialogMain {
+  overflow: auto;
+  padding: 1rem;
+}
+
+.dialogAction {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-top: 1px solid var(--accent2);
+}
+
+.dialogAction > button {
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.dialogAction > button:disabled {
+  opacity: .5;
+}

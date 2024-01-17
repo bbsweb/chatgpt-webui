@@ -1,0 +1,20 @@
+.title {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  text-align: center;
+  background: inherit;
+  width: 100%;
+}
+
+.btn {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent2);
+}
+
+.btn:hover {
+  background: var(--accent2);
+}

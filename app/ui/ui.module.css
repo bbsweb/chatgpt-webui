@@ -1,0 +1,86 @@
+/* 消息条 */
+.alert {
+  padding: .5rem;
+  border-radius: .3rem;
+}
+
+/* 按钮 */
+.button {
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .3rem;
+}
+
+/* 对话框 */
+.dialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 20; /* 确保位于所有元素之上 */
+}
+
+/* 加载组件 */
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 菜单 */
+.menu {
+  position: absolute;
+  z-index: 10; /* 确保位于所有元素之上 */
+}
+
+/* 选项菜单 */
+.select {
+  max-width: 100%;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+
+.primary {
+  color: var(--bg);
+  background: var(--fg);
+}
+
+.info {
+  color: var(--info);
+  background: var(--info-bg);
+}
+
+.success {
+  color: var(--success);
+  background: var(--success-bg);
+}
+
+.warn {
+  color: var(--warn);
+  background: var(--warn-bg);
+}
+
+.error {
+  color: var(--error);
+  background: var(--error-bg);
+}
+
+/* 轮廓 */
+.outline {
+  border: 1px solid;
+  background: unset;
+}
+
+/* 禁用 */
+.disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}

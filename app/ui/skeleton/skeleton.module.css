@@ -1,0 +1,24 @@
+.anime {
+  animation: 1s loading linear infinite;
+}
+
+.square {
+  border-radius: 4px;
+  background: linear-gradient(100deg, var(--accent3) 8%, var(--accent2) 18%, var(--accent3) 33%);
+  background-size: 200%;
+  background-position-x: 180%;
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(100deg, var(--accent3) 8%, var(--accent2) 18%, var(--accent3) 33%);
+  background-size: 200%;
+  background-position-x: 180%;
+  animation: 1s loading linear infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}

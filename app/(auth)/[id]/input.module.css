@@ -1,0 +1,42 @@
+.textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  padding-right: 3rem;
+  max-height: 200px;
+}
+
+/* 发送按钮 */
+.send {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: .5rem;
+  background: #1d93ab;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.send:disabled {
+  background: var(--accent1);
+  color: var(--accent5);
+  cursor: not-allowed;
+}
+
+/* 取消按钮 */
+.cancel {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: .5rem;
+  background: #1d93ab;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
