@@ -1,7 +1,6 @@
 'use client'
 
 import {type Dispatch, type SetStateAction, createContext, useContext, useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
 import {useI18n, useStore} from '../store'
 import {getSettingAction, updateSettingAction} from '../action'
 
@@ -50,8 +49,7 @@ export const useGPTContext = () => useContext<ContextProps>(GPTContext)
 export default function GPTProvider ({children}: {children: React.ReactNode}) {
   const [init, setInit] = useState(false) // 设置是否加载完成
   const [setting, setSetting] = useState(defaultSetting)
-  const router = useRouter()
-  const {i18next} = useI18n()
+  const {i18next, changeLanguage} = useI18n()
   const {dispatchTheme} = useStore()
 
   /** 数据库加载设置 */
@@ -83,11 +81,9 @@ export default function GPTProvider ({children}: {children: React.ReactNode}) {
   /** 更改语言 */
   useEffect(() => {
     if (init && setting.lang !== i18next.language) {
-      document.cookie = `lang=${setting.lang}; max-age=31536000; path=/; samesite=strict`
-      i18next.changeLanguage(setting.lang)
-      router.refresh()
+      changeLanguage(setting.lang)
     }
-  }, [dispatchTheme, i18next, init, router, setting.lang])
+  }, [changeLanguage, i18next.language, init, setting.lang])
 
   /** 更改主题 */
   useEffect(() => {
